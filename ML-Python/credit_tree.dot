@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="TIPOR <= 0.5\ngini = 0.498\nsamples = 1200\nvalue = [636, 564]", fillcolor="#fcf1e9"] ;
+1 [label="IDADE <= 54.5\ngini = 0.421\nsamples = 650\nvalue = [196, 454]", fillcolor="#8ec7f0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="IDADE <= 53.5\ngini = 0.045\nsamples = 437\nvalue = [10, 427]", fillcolor="#3e9fe6"] ;
+1 -> 2 ;
+3 [label="gini = 0.028\nsamples = 426\nvalue = [6, 420]", fillcolor="#3c9ee5"] ;
+2 -> 3 ;
+4 [label="gini = 0.463\nsamples = 11\nvalue = [4, 7]", fillcolor="#aad5f4"] ;
+2 -> 4 ;
+5 [label="RESMS <= 108.0\ngini = 0.221\nsamples = 213\nvalue = [186, 27]", fillcolor="#e99356"] ;
+1 -> 5 ;
+6 [label="gini = 0.162\nsamples = 202\nvalue = [184, 18]", fillcolor="#e88d4c"] ;
+5 -> 6 ;
+7 [label="gini = 0.298\nsamples = 11\nvalue = [2, 9]", fillcolor="#65b3eb"] ;
+5 -> 7 ;
+8 [label="IDADE <= 25.5\ngini = 0.32\nsamples = 550\nvalue = [440, 110]", fillcolor="#eca06a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 26\nvalue = [0, 26]", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="NPARC <= 11.0\ngini = 0.269\nsamples = 524\nvalue = [440, 84]", fillcolor="#ea995f"] ;
+8 -> 10 ;
+11 [label="gini = 0.224\nsamples = 444\nvalue = [387, 57]", fillcolor="#e99456"] ;
+10 -> 11 ;
+12 [label="gini = 0.447\nsamples = 80\nvalue = [53, 27]", fillcolor="#f2c19e"] ;
+10 -> 12 ;
+}
